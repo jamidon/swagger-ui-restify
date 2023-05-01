@@ -60,7 +60,7 @@ var generateHTML = function (swaggerDoc, opts, options, customCss, customfavIcon
 
 var setup = function (swaggerDoc, opts, options, customCss, customfavIcon, swaggerUrl, customSiteTitle) {
     var htmlWithOptions = generateHTML(swaggerDoc, opts, options, customCss, customfavIcon, swaggerUrl, customSiteTitle)
-    return function (req, res) {
+  return function (req, res, next) {
       res.writeHead(200, {
         'Content-Length': Buffer.byteLength(htmlWithOptions),
         'Content-Type': 'text/html'
