@@ -25,13 +25,13 @@
     "node": ">= v6.9.1"
   },
   "dependencies": {
-    "swagger-ui-dist": "^3.18.1"
+    "swagger-ui-dist": "^5.15.1"
   },
   "devDependencies": {
-    "es6-shim": "0.35.2",
-    "restify": "5.0.0",
-    "mocha": "2.2.5",
-    "phantom": "2.1.21"
+    "es6-shim": "^0.35.8",
+    "mocha": "^10.4.0",
+    "phantom": "^6.3.0",
+    "restify": "^11.1.0"
   },
   "author": {
     "name": "Brad van der Laan",
